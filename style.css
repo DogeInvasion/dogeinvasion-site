@@ -1,0 +1,7 @@
+/* External styles.css file */
+body {
+    background-image: url('backgroundcolor.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+}
