@@ -136,10 +136,18 @@
 </a>
 
 
-<audio autoplay loop>
+<audio id="bg-music" loop>
   <source src="youtube_1y9Nuj4Lql0_1920x1080_h264.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
 </audio>
+
+<script>
+  // Wait for user to click anywhere, then play the audio
+  window.addEventListener('click', function () {
+    const audio = document.getElementById('bg-music');
+    audio.play();
+  }, { once: true }); // only runs once
+</script>
+
 
 
 
